@@ -14,17 +14,20 @@ export const LeftMainSection = () => {
             <div className='w-full h-[447px] flex-col px-16 py-14 bg-gray-100'>
                 <h1 className='font-bold text-[18px] mb-5'>Item Categories</h1>
 
-                <div className='w-full h-10 px-4 bg-white border-[1px] mb-3 flex items-center justify-between cursor-pointer'>
+                <div className='w-full h-10 px-4 bg-white border-[1px] mb-3 flex items-center justify-between cursor-pointer'
+                >
                     <h1 className='text-[13px] font-semibold text-gray-500'>Sneakers</h1>
                     <img src={DownArrow} className='w-3 h-3 opacity-50 rotate-[-90deg]'/>
                 </div>
 
-                <div className='w-full h-10 px-4 bg-white border-[1px] mb-3 flex items-center justify-between cursor-pointer'>
+                <div className='w-full h-10 px-4 bg-white border-[1px] mb-3 flex items-center justify-between cursor-pointer'
+                >
                     <h1 className='text-[13px] font-semibold text-gray-500'>T-shirts</h1>
                     <img src={DownArrow} className='w-3 h-3 opacity-50 rotate-[-90deg]'/>
                 </div>
 
-                <div className='w-full h-10 px-4 bg-white border-[1px] mb-3 flex items-center justify-between cursor-pointer'>
+                <div className='w-full h-10 px-4 bg-white border-[1px] mb-3 flex items-center justify-between cursor-pointer'
+                >
                     <h1 className='text-[13px] font-semibold text-gray-500'>Watches</h1>
                     <img src={DownArrow} className='w-3 h-3 opacity-50 rotate-[-90deg]'/>
                 </div>
