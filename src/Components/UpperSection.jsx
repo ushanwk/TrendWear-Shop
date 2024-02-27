@@ -1,7 +1,7 @@
 export const UpperSection = () => {
     return (
         <div className='w-full h-40 flex'>
-            <div className='w-[400px] h-full flex items-center'>
+            <div className='w-[350px] h-full flex items-center'>
                 <h1 className='text-[13px] text-gray-400 px-24'>Home > <span className='text-black'>Sneakers</span></h1>
             </div>
 
