@@ -1,14 +1,26 @@
+import ShoeOne from '../Images/Shoes/ShoeOne.png'
+import ShoeTwo from '../Images/Shoes/ShoeTwo.png'
+import ShoeThree from '../Images/Shoes/ShoeThree.png'
+
 const ShoeData = [
     {
-        name: 'Adidas Osade Shoes',
+        brand: 'ADIDAS',
+        model: 'NMD_S1 sport v3 Shoes',
         price: 'Rs. 21,000',
+        img: ShoeOne,
     },
     {
-        name: 'Adidas NMD_S1 Shoes',
-        price: 'Rs. 45,500',
+        brand: 'NIKE',
+        model: 'Gamma Force Hard v5 Shoes',
+        price: 'Rs. 19,000',
+        img: ShoeTwo,
     },
     {
-        name: 'Adidas Revival Shoes',
-        price: 'Rs. 25,000',
+        brand: 'ADIDAS',
+        model: 'Court Revival Shoes',
+        price: 'Rs. 28,000',
+        img: ShoeThree,
     }
 ];
+
+export default ShoeData;
