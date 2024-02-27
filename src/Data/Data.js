@@ -39,7 +39,7 @@ const Data = [
         img: TshirtOne,
     },
     {
-        brand: 'CROCODILE',
+        brand: 'PUMA',
         model: 'Pima Cotton comfortable T-Shirt',
         price: 'Rs. 5,000',
         img: TshirtTwo,
