@@ -6,6 +6,11 @@ import TshirtOne from '../Images/Tshirts/TshirtOne.png'
 import TshirtTwo from '../Images/Tshirts/TshirtTwo.png'
 import TshirtThree from '../Images/Tshirts/TshirtThree.png'
 
+import WatchTwo from '../Images/Watches/WatchOne.png'
+import WatchOne from '../Images/Watches/WatchTwo.png'
+import WatchThree from '../Images/Watches/WatchThree.png'
+
+
 const Data = [
     {
         brand: 'ADIDAS',
@@ -44,6 +49,26 @@ const Data = [
         model: 'Hilfiger Alumini Graphic T-Shirt',
         price: 'Rs. 10,000',
         img: TshirtThree,
+    },
+
+
+    {
+        brand: 'OMEGA',
+        model: 'SEAMASTER DIVER 300M PARIS 2024 Watch',
+        price: 'Rs. 28,000',
+        img: WatchOne,
+    },
+    {
+        brand: 'ROLEX',
+        model: 'Cosmograph Daytona Watch',
+        price: 'Rs. 15,000',
+        img: WatchTwo,
+    },
+    {
+        brand: 'TIMEX',
+        model: 'Alumini Classical Watch',
+        price: 'Rs. 10,000',
+        img: WatchThree,
     }
 ];
 
