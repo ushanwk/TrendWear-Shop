@@ -17,6 +17,8 @@ export const RightMainSection = ({tab}) => {
     const cart = useSelector((s) => s.cart);
     const dispatch = useDispatch();
 
+    console.log(cart)
+
     return (
         <div className='w-[1350px] h-full border-[2px] border-l-0'>
 
@@ -31,7 +33,8 @@ export const RightMainSection = ({tab}) => {
                         <h1 className='font-bold text-[25px]'>{Data[index].price}</h1>
 
                         <div className='w-32 h-10 bg-black flex justify-center items-center cursor-pointer'
-                             onClick={() => dispatch(addToCart(index))}
+                             onClick={() => dispatch(addToCart(index))
+                        }
                         >
                             <h1 className='text-white'>Add to Cart</h1>
                         </div>
