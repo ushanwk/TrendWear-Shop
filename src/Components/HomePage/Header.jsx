@@ -9,13 +9,13 @@ export const Header = () => {
 
     return (
         <header className='w-full h-20 flex justify-between'>
-            <div className='flex gap-10 items-center'>
+            <Link to='/' className='flex gap-10 items-center'>
                 <div className='w-20 h-full bg-black flex items-center justify-center'>
                     <img src={Menu} className='w-8'/>
                 </div>
 
                 <h1 className='text-[30px] font-bold'>TrendWear.</h1>
-            </div>
+            </Link>
 
             <Link to='/cart'>
                 <div className='w-32 h-full bg-black flex gap-3 items-center justify-center cursor-pointer'>

@@ -7,7 +7,13 @@ export const CartLeftSection = () => {
     const cart = useSelector((s) => s.cart);
     const dispatch = useDispatch();
 
-    let price = 0;
+    if(cart.length === 0){
+        return (
+            <div className='w-3/12 h-32 flex flex-col justify-center items-center'>
+                <h1 className='text-[30px] font-bold text-gray-400'>Cart is Empty</h1>
+            </div>
+        )
+    }
 
     return (
         <div className='w-9/12 border-r-2 p-4'>
@@ -36,7 +42,7 @@ export const CartLeftSection = () => {
                             >+</div>
                         </div>
 
-                        <h1 className='font-bold'>Rs.70000</h1>
+                        <h1 className='font-bold'>{data[index.number].money * index.count}</h1>
 
                         <div className='flex items-center justify-center bg-black cursor-pointer'
                             onClick={() => {
