@@ -1,5 +1,6 @@
 import Data from "../Data/Data";
-
+import {useDispatch, useSelector} from "react-redux";
+import {addToCart} from "../Store/Reducers/CartSlice";
 
 export const RightMainSection = ({tab}) => {
 
@@ -13,12 +14,14 @@ export const RightMainSection = ({tab}) => {
         index = 6;
     }
 
+    const cart = useSelector((s) => s.cart);
+    const dispatch = useDispatch();
 
     return (
         <div className='w-[1350px] h-full border-[2px] border-l-0'>
 
             <div className='h-[480px] w-full flex'>
-                <div className='w-[450px] h-full border-b border-r px-12 py-10'>
+                <div className="w-[450px] h-full border-b border-r px-12 py-10">
                     <h1 className='font-bold text-[35px]'>{Data[index].brand}</h1>
                     <h1 className='font-bold text-[15px] text-gray-400'>{Data[index].model}</h1>
 
@@ -27,7 +30,9 @@ export const RightMainSection = ({tab}) => {
                     <div className='w-full flex justify-between pt-10'>
                         <h1 className='font-bold text-[25px]'>{Data[index].price}</h1>
 
-                        <div className='w-32 h-10 bg-black flex justify-center items-center cursor-pointer'>
+                        <div className='w-32 h-10 bg-black flex justify-center items-center cursor-pointer'
+                             onClick={() => dispatch(addToCart(index))}
+                        >
                             <h1 className='text-white'>Add to Cart</h1>
                         </div>
                     </div>
@@ -43,7 +48,9 @@ export const RightMainSection = ({tab}) => {
                     <div className='w-full flex justify-between pt-10'>
                         <h1 className='font-bold text-[25px]'>{Data[(index+1)].price}</h1>
 
-                        <div className='w-32 h-10 bg-black flex justify-center items-center cursor-pointer'>
+                        <div className='w-32 h-10 bg-black flex justify-center items-center cursor-pointer'
+                             onClick={() => dispatch(addToCart(index+1))}
+                        >
                             <h1 className='text-white'>Add to Cart</h1>
                         </div>
                     </div>
@@ -59,7 +66,9 @@ export const RightMainSection = ({tab}) => {
                     <div className='w-full flex justify-between pt-10'>
                         <h1 className='font-bold text-[25px]'>{Data[index+2].price}</h1>
 
-                        <div className='w-32 h-10 bg-black flex justify-center items-center cursor-pointer'>
+                        <div className='w-32 h-10 bg-black flex justify-center items-center cursor-pointer'
+                            onClick={() => dispatch(addToCart(index+2))}
+                        >
                             <h1 className='text-white'>Add to Cart</h1>
                         </div>
                     </div>
