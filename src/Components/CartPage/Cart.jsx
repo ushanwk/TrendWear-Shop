@@ -1,5 +1,6 @@
 import {Header} from "../HomePage/Header";
 import {CartUpperSection} from "./CartUpperSection";
+import {CartMainSection} from "./CartMainSection";
 
 export const Cart = () => {
     return (
@@ -7,6 +8,7 @@ export const Cart = () => {
         <div>
             <Header />
             <CartUpperSection />
+            <CartMainSection />
         </div>
 
     )
