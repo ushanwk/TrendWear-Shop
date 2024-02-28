@@ -7,7 +7,6 @@ const cartSlice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
-
         addToCart: (state, action) => {
             let isAdded = false;
 
@@ -27,8 +26,16 @@ const cartSlice = createSlice({
         removeFromCart: (state, action) => {
             state.splice(action.payload, 1);
         },
+        increment: (state, action) => {
+            state[action.payload].count++;
+        },
+        decrement: (state, action) => {
+            if(state[action.payload].count > 1){
+                state[action.payload].count--;
+            }
+        }
     },
 });
 
-export const {addToCart, removeFromCart} = cartSlice.actions;
+export const {addToCart, removeFromCart, increment, decrement} = cartSlice.actions;
 export default cartSlice.reducer;

@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import data from "../../Data/Data";
-import {removeFromCart} from "../../Store/Reducers/CartSlice";
+import {decrement, increment, removeFromCart} from "../../Store/Reducers/CartSlice";
 
 export const CartLeftSection = () => {
 
@@ -21,9 +21,19 @@ export const CartLeftSection = () => {
                         <h1 className='text-gray-400 text-[12px]'>{data[index.number].model}</h1>
 
                         <div className='flex gap-3'>
-                            <div className='h-7 w-7 rounded-full bg-white flex items-center justify-center cursor-pointer border-2'>-</div>
+                            <div className='h-7 w-7 rounded-full bg-white flex items-center justify-center cursor-pointer border-2'
+                                onClick={() => {
+                                    dispatch(decrement(count))
+                                }}
+                            >-</div>
                             <h1>{index.count}</h1>
-                            <div className='h-7 w-7 rounded-full bg-white flex items-center justify-center cursor-pointer border-2'>+</div>
+                            <div className='h-7 w-7 rounded-full bg-white flex items-center justify-center cursor-pointer border-2'
+                                 onClick={() => {
+                                     dispatch(() => {
+                                         dispatch(increment(count))
+                                     })
+                                 }}
+                            >+</div>
                         </div>
 
                         <h1 className='font-bold'>Rs.70000</h1>
