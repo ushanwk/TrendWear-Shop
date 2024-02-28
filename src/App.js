@@ -1,7 +1,7 @@
 import './App.css';
-import {Header} from "./Components/Header";
-import {UpperSection} from "./Components/UpperSection";
-import {MainSection} from "./Components/MainSection";
+import {Header} from "./Components/HomePage/Header";
+import {UpperSection} from "./Components/HomePage/UpperSection";
+import {MainSection} from "./Components/HomePage/MainSection";
 import {useState} from "react";
 
 function App() {

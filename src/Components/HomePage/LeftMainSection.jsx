@@ -1,4 +1,4 @@
-import DownArrow from "../Images/DownArrow.png";
+import DownArrow from "../../Images/DownArrow.png";
 import {useState} from "react";
 
 export const LeftMainSection = ({set}) => {

@@ -1,6 +1,6 @@
-import Data from "../Data/Data";
+import Data from "../../Data/Data";
 import {useDispatch, useSelector} from "react-redux";
-import {addToCart} from "../Store/Reducers/CartSlice";
+import {addToCart} from "../../Store/Reducers/CartSlice";
 
 export const RightMainSection = ({tab}) => {
 

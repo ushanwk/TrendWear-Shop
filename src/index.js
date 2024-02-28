@@ -6,11 +6,28 @@ import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux";
 import Store from "./Store/Store";
 
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
+import {Cart} from "./Components/CartPage/Cart";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <App />,
+    },
+    {
+        path: "cart",
+        element: <Cart />,
+    },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={Store}>
-        <App />
+        <RouterProvider router={router}/>
     </Provider>
   </React.StrictMode>
 );
